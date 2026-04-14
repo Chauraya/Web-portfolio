@@ -292,6 +292,7 @@ body.light .btn:active{
 .socials{
     display: flex;
     gap: 2rem;
+    justify-content: center;
 }
 .socials i{
     align-items: center;
