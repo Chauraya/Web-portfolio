@@ -1,3 +1,3 @@
-portfolio.html
+index.html
 stle.css
 script.js
