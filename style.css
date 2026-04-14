@@ -127,6 +127,22 @@ body.light .visit-btn{
 body.light .counter-item p{
     color: #555;
 }
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+.home-container h1{
+    background: linear-gradient(to right, #009dff, #ff00ff);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.8rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
 .skills{
     padding: 60px 20px;
     text-align: center;
@@ -202,6 +218,13 @@ section{
     align-items: center;
     justify-content: center;
     gap:10rem;
+}
+.about .about-container .text p{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
 }
 .about img{
     width:30vw;
