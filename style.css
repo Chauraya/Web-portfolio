@@ -294,6 +294,9 @@ body.light .btn:active{
     gap: 2rem;
 }
 .socials i{
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
     font-size: 2.5rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
