@@ -1,221 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Given Chauraya | Aspiring AI/ML Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header">
-     <a href="#" class="logo"><span>Given C</span></a> 
-     
-     <ul class="nav-links" id="nav-links">
-        <li>
-            <a href="#home"><i class="fa-solid fa-house"></i></a>
-        </li>
-        <li>
-            <a href="#about">About</a>
-        </li>
-        <li>
-            <a href="#skills">Skills</a>
-        </li>
-        <li>
-            <a href="#Certifications">Certifications</a>
-        </li>
 
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
-     </ul>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-brand">GC<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-     <button class="hamburger" id="hamburger">
-        <i class="fa-solid fa-bars"></i>
-     </button>
-     <button class="visit-btn"><a href="https://github.com/Given-Chauraya" target="_blank">Visit Github</a></button>
-     <button class="theme-btn"id="theme-btn">
-        <i class="fa-solid fa-moon"></i>
-     </button>   
-    </header>
-    <section id="home" class="home">
-        <div class="home-container">
-            <h1>Given Chauraya</h1>
-            <h3>Computer Science Student</h3>
-            <p>Discover my projects, skills, and experience as an aspiring data scientist.</p>
-            <a href="#about" class="btn">Learn More</a>
+  <!-- ========== MOBILE NAV ========== -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about"           class="mobile-link">About</a></li>
+      <li><a href="#skills"          class="mobile-link">Skills</a></li>
+      <li><a href="#certifications"  class="mobile-link">Certifications</a></li>
+      <li><a href="#contact"         class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+
+    <div class="hero-content">
+      <p class="hero-label">
+        <span class="dot"></span>
+        Available for opportunities
+      </p>
+      <h1 class="hero-name">
+        Given<br />
+        <span class="outline-text">Chauraya</span>
+      </h1>
+      <p class="hero-title">
+        <span id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        Computer Science student at Midlands State University, building intelligent
+        systems at the intersection of AI, Machine Learning and Cybersecurity.
+      </p>
+      <div class="hero-cta">
+        <a href="#certifications" class="btn btn-primary">
+          View My Work <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="hero-image-ring"></div>
+      <img src="img.jpeg" alt="Given Chauraya" class="hero-image" />
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>
+            I'm a <strong>Computer Science student</strong> at Midlands State University
+            with a deep passion for <strong>Artificial Intelligence</strong> and
+            <strong>Cybersecurity</strong>. My goal is to engineer intelligent systems
+            that solve real-world problems and make the digital world safer.
+          </p>
+          <p>
+            I thrive at the crossroads of data, logic, and creativity — constantly
+            learning, building, and pushing the boundaries of what technology can achieve.
+            From ethical hacking to machine learning, I'm driven by curiosity and
+            a desire to create meaningful impact.
+          </p>
         </div>
 
-        <div class="socials">
-            <a href="https://github.com/Given-Chauraya" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/given-chauraya-018947379" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://wa.me/+263777143091" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/given_chauraya" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <div class="counters fade-in">
+          <div class="counter-card">
+            <span class="counter-num" data-target="3">0</span>
+            <span class="counter-plus">+</span>
+            <span class="counter-label">Certifications Earned</span>
+          </div>
+          <div class="counter-card">
+            <span class="counter-num" data-target="4">0</span>
+            <span class="counter-plus">+</span>
+            <span class="counter-label">Technologies Mastered</span>
+          </div>
+          <div class="counter-card counter-span">
+            <span class="counter-num" data-target="2">0</span>
+            <span class="counter-label">Years of Study</span>
+          </div>
         </div>
-    </section>
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="potfol.jpeg" alt=" ">
-            <div class="infor-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Given Chauraya</h1>
-                    <p>Student at Midlands State University doing Computer Science, aspiring to become a Machine Learning/ AI engineer.
-                        I recentytly completed learning HTML and CSS, this webportfolio is actually my first project using these technologies. 
-                        I am passionate about data science and machine learning, and I am eager to apply my skills to real-world problems. 
-                        I am always looking for new challenges and opportunities to apply and expand my knowledge.
+      </div>
+    </div>
+  </section>
 
-                    </p>
-                </div>
-                <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <a href="#contact" class="btn">Contact</a>
-                </div>
-                <div class="counters">
-                    <div class="counter-item">
-                        <h3 class="counter" data-target="10">2</h3>
-                        <p><Projects>Projects/Certifications  Done</p>
-                    </div>
-                    <div class="counter-item">
-                        <h3 class="counter" data-target="15">4</h3>
-                        <p>Skills Learned</p>
-                    </div>
-                </div>
-            </div>
+  <!-- ========== SKILLS ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">What I Know</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+          </div>
         </div>
-    </section>
-    <section  id="skills" class="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-grid"> 
 
-            <div class="skill-card">
-                <h3>Programming Languages</h3>
-                <div class="skill-items">
-                    <span>Python<i class="fa-brands fa-python"></i></span>
-                    <span>HTML<i class="fa-brands fa-html5"></i></span>
-                    <span>CSS<i class="fa-brands fa-css3"></i></span>
-                </div>
-            </div>
- 
-            <div class="skill-card">
-                <h3>Frameworks / Libraries</h3>
-                <div class="skill-items">
-                   <span>Bootstrap<i class="fa-brands fa-bootstrap"></i></span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <h3>Tools / Platforms</h3>
-                <div class="skill-items">
-                     <span>Git<i class="fa-brands fa-git-alt"></i></span>
-                     <span>GitHub<i class="fa-brands fa-github"></i></span>
-                     <span>PyCharm</span>
-                </div>
-            </div>
-
-                <div class="skill-card">
-                    <h3>Databases</h3>
-                    <div class="skill-items">
-                        <span>MySQL<i class="fa-solid fa-database"></i></span> 
-                     </div>
-                </div>
-            </div>
-        </div> 
-
-    </section>
-    <section id="Certifications" class="Certifications">
-
-        <h2 class="section-title">Projects / Certifications</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="project-2.png" alt="">
-                <h3>Certification 1</h3>
-                <p>Kali Linux for Ethical Hacking and Security Analysis</p>
-                <div class="btn-group">
-                  <div class="btn">Live Demo</div>
-                  <div class="btn" >LinkedIn Repo
-
-                  </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="cert2.png" alt="">
-                <h3>Certification 2</h3>
-                <p>AI-Powered Cybersecurity Fundamentals</p>
-               <div class="btn-group">
-                  <div class="btn">
-                    <a href="https://alison.com/verify/78ac5bd10c" target="_blank">Live Demo</a>
-                  </div>
-                  <div class="btn">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7440293330749612033/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B0L%2B3Sng7SfS5YAAN4r%2FRkA%3D%3D" target="_blank">LinkedIn Repo</a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="project-card">
-                <img src="Certif.png" alt="">
-                <h3>Certification 3</h3>
-                <p>SQL Injection Attacks</p>
-               <div class="btn-group">
-                  <div class="btn">
-                    <a href="https://eccommonstorage.blob.core.windows.net/codered/certificates/5754a950-5c29-4f7a-b8c6-dafed2468b95.png" target="_blank">Live Demo</a>
-                  </div>
-                  <div class="btn">
-                    <a href="https://www.linkedin.com/posts/given-chauraya-018947379_ec-council-learning-ec-council-learning-activity-7444446045260103680-AWan?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF2T71QBPDd4LXZSTppvwqNi2aDsGo9Ittc" target="_blank">LinkedIn Repo</a>
-                  </div>
-               </div>
-            </div>
-        </div>   
-    </section>
-    <section id="contact" class="contact">
-       <h2>Contact Me</h2>
-
-        <div class="contact-container">
-          <form class="contact-form" id="contact-form">
-
-            <div class="form-group">
-                 <input type="text" id="name" name="name" placeholder="Your Name" required>
-                 <span class="error" id="name-error"></span>
-            </div>
-
-            <div class="form-group">
-                 <input type="email" id="email" name="email" placeholder="Your Email" required>
-                 <span class="error" id="email-error"></span>
-            </div>
-            
-            <div class="form-group">
-                 <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                 <span class="error" id="message-error"></span>
-            </div>
-            <button type="submit"  onclick="validateForm()">Send Message</button>
-            </form>
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-layer-group"></i> Frameworks &amp; Libraries</h3>
+          <div class="skill-tags">
+            <span class="tag">Bootstrap</span>
+          </div>
         </div>
-    </section>
-    <footer>
-        <ul>
-            <li><a href="#about">About</a>
-            </li>
-            <li><a href="#skills">Skills</a>
-            </li>
 
-            <li><a href="#Certifications">Projects / Certifications</a>
-            </li>
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+          </div>
+        </div>
 
-            <li><a href="#contact">Contact</a>
-            </li>
-        </ul>
-        <p class="copyright">&copy; 2026 Given Chauraya | All rights reserved.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-            <script>emailjs.init('CqZOjoTB78vWzsxg3');</script>
-            <script src="script.js"></script>
-    <script>
-        const menuIcon = document.getElementById('menu-icon');
-        const navLinks = document.querySelector('.nav-links');
-    </script>        
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="certifications section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Certifications</span>
+        <h2 class="section-title">My Credentials</h2>
+      </div>
+
+      <div class="certs-grid">
+
+        <!-- Cert 1 -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="cert-content">
+            <h3>Kali Linux for Ethical Hacking &amp; Security Analysis</h3>
+            <p>
+              An industry-recognised certification covering penetration testing methodologies,
+              network reconnaissance, vulnerability exploitation, and security analysis
+              using the full suite of Kali Linux tools.
+            </p>
+            <div class="cert-tech">
+              <span>Kali Linux</span>
+              <span>Nmap</span>
+              <span>Metasploit</span>
+              <span>Wireshark</span>
+              <span>Bash</span>
+            </div>
+            <a href="https://alison.com/dashboard" class="btn btn-sm btn-outline">
+              <i class="fas fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon"><i class="fas fa-robot"></i></div>
+          <div class="cert-content">
+            <h3>AI-Powered Cybersecurity Fundamentals</h3>
+            <p>
+              Comprehensive training in applying artificial intelligence and machine
+              learning techniques to modern cybersecurity challenges, including automated
+              threat detection, anomaly analysis, and intelligent incident response.
+            </p>
+            <div class="cert-tech">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>AI Tools</span>
+              <span>Cybersecurity</span>
+            </div>
+            <a href="https://cdn01.alison-static.net/courses/7295/alison_courseware_intro_7295.jpg" class="btn btn-sm btn-outline">
+              <i class="fas fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon"><i class="fas fa-database"></i></div>
+          <div class="cert-content">
+            <h3>SQL Injection Attacks</h3>
+            <p>
+              Specialised certification focused on identifying, exploiting, and
+              defending against SQL injection vulnerabilities in web applications and
+              database systems using OWASP standards and best security practices.
+            </p>
+            <div class="cert-tech">
+              <span>SQL</span>
+              <span>MySQL</span>
+              <span>OWASP</span>
+              <span>Web Security</span>
+              <span>Python</span>
+            </div>
+            <a href="https://eccommonstorage.blob.core.windows.net/codered/certificates/5754a950-5c29-4f7a-b8c6-dafed2468b95.png" class="btn btn-sm btn-outline">
+              <i class="fas fa-certificate"></i> View Certificate
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info fade-in">
+          <p>
+            Have a project in mind, want to collaborate, or just want to say hello?
+            I'm always open to new opportunities and conversations. Send a message
+            and I'll get back to you as soon as possible.
+          </p>
+          <div class="socials">
+            <a href="https://github.com/Given-Chauraya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/given-chauraya-018947379" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/given_chauraya" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm" novalidate>
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              autocomplete="off"
+            />
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              autocomplete="off"
+            />
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+            ></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Send Message</span>
+            <i class="fas fa-paper-plane" id="btnIcon"></i>
+          </button>
+
+          <p class="form-status" id="formStatus"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Built by <span class="accent">Given Chauraya</span> &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
