@@ -246,10 +246,10 @@ contactForm.addEventListener('submit', async (e) => {
       'service_t8eql4j',   
       'template_opk7atv',  
       {
-        from_name:  nameVal,
-        from_email: emailVal,
-        message:    messageVal,
-        reply_to:   emailVal,
+        from_name:  name,
+        from_email: email,
+        message:    message,
+        reply_to:   email,
       }
     );
 
